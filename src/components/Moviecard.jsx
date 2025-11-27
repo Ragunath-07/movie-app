@@ -11,7 +11,7 @@ function Moviecard({ movies }) {
 
     return (
         <div className="bg-gray-200 rounded-md shadow-lg mx-3 mt-8 relative cursor-pointer p-6">
-            <img src={movies.image?.medium || "https://via.placeholder.com/210x295"} alt={movies.title} className="w-full border rounded-md" />
+            <img src={movies.image?.medium || "https://via.placeholder.com/210x295"} alt={movies.title} className="w-full border rounded-md mt-2" />
             <div className="p-2">
                 <p className="text-lg font-medium text-red-600">{movies.name}</p>
                 <p className="text-sm">{movies.premiered}</p>
@@ -20,7 +20,7 @@ function Moviecard({ movies }) {
                     <p className="text-yellow-400 text-xl"><MdStar /></p>
                 </div>
             </div>
-            <button className="text-red-600 text-xl absolute top-2 right-1 transform transition hover:scale-110 duration-150"
+            <button className="text-red-600 text-xl absolute top-2 right-2 transform transition hover:scale-110 duration-150"
                 onClick={() => toggleWatchlist(movies)}>
                 {inWatchList ? <FaHeart /> : <FaRegHeart />}
             </button>

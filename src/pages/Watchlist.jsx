@@ -1,5 +1,5 @@
 import { useContext, useState } from "react"
-import AllGenre from "../components/Allgenre"
+import AllGenre from "../components/AllGenre"
 import { WatchlistContext } from "../context/WatchlistContext"
 import Moviecard from "../components/Moviecard"
 
@@ -20,7 +20,7 @@ function Watchlist() {
                 <input
                     type="text"
                     placeholder="Search for movies..."
-                    className="w-3/4 md:w-1/2 p-2 border border-black rounded-md"
+                    className="w-3/4 md:w-1/2 p-2 border rounded-md shadow-md"
                     onChange={e => setSearch(e.target.value)}
                 />
             </div>

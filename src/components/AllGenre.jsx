@@ -3,7 +3,7 @@ function AllGenre({ genrelist, selectedGenre, setSelectedGenre }) {
         <select
             value={selectedGenre}
             onChange={(e) => setSelectedGenre(e.target.value)}
-            className="border border-black p-2 rounded-md text-white bg-red-600"
+            className="border border-black p-2 rounded-md bg-gray-100"
         >
             <option value="">All Genres</option>
             {genrelist.map((items) => (
